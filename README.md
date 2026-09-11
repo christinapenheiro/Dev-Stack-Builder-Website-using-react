@@ -1,35 +1,58 @@
-# React + TypeScript + Vite
+# 🚀 Developer Technology Stack
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A modern and responsive web application for exploring popular web development technologies and building your own personalized technology stack.
 
-Currently, two official plugins are available:
+## 🛠️ Technologies Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* **React** — UI development
+* **TypeScript** — Type-safe JavaScript
+* **Tailwind CSS** — Responsive and modern styling
+* **DaisyUI** — UI components
+* **React Icons** — Icons
+* **React Toastify** — Toast notifications
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+### 1. 🔎 Explore Technologies
 
-Note: This will impact Vite dev & build performances.
-You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
+Browse different technologies across categories such as Frontend, Backend, Database, Language, Styling, DevOps, and Tools.
 
-## Expanding the Oxlint configuration
+### 2. ➕ Build Your Own Stack
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+Add technologies to your personal stack and easily see which technologies have already been selected.
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
+### 3. 🗑️ Manage Your Stack
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+Remove individual technologies or clear your entire stack with the **Remove All** option. Toast notifications provide feedback when technologies are added or removed.
+
+## 📱 Responsive Design
+
+The application is designed to work smoothly across mobile, tablet, and desktop screen sizes using **Tailwind CSS**.
+
+## 🎯 Project Purpose
+
+This project was built as a React practice project to improve my skills with **components, props, state management, TypeScript, API data, array methods, responsive design, and Tailwind CSS**. 
+
+
+SOME Q&A
+What is JSX, and why is it used in React?
+>>JSX is used in React to write HTML code inside of Javascript.
+
+What is the difference between props and state?
+>> Props is used to send value inside of components and state is used to modify and remember a state of a component.
+
+What does the useState hook do, and where did you use it in this project?
+>> Usestate is used to modify state against the previous state. I used useState to update stack array in this project to add new items to stack cart.
+
+What does the useEffect hook do, and why did you need it to load the JSON data?
+
+
+Why does every item in a .map() list need a unique key prop?
+
+
+What is conditional rendering? Show one place you used it (example: the empty stack message).
+
+
+How do you pass data from a parent component to a child component, and how does a child send something back to the parent?
+
+

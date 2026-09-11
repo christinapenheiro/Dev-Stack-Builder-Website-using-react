@@ -1,4 +1,5 @@
-import { useState } from "react";
+// import { useState } from "react";
+import { toast } from "react-toastify";
 import type { Technology } from "../types/types";
 import { FaStar } from "react-icons/fa";
 
@@ -10,17 +11,25 @@ interface ICard {
 
 export default function Card({ stack,stackAdded,setStackAdded }: ICard) {
 
-    const [button,setButton] = useState(false)
+    // const [button,setButton] = useState(false)
 
-    const disableButton = () => {
-        setButton(!button)
-    }
-
+    // const disableButton = () => {
+    //     setButton(!button)
+    // }
 
     const stackAddedFunc = () => {
-        const stackList = [...stackAdded,stack] 
-        setStackAdded(stackList)
+        const stackList = [...stackAdded,stack]
+        setStackAdded(stackList);
+        toast.success(`${stack.name} added to your stack!`);
     }
+
+
+
+
+    // console.log(stackAdded)
+
+   const isAdded = stackAdded.some(s=>s.id===stack.id)
+
 
 
     return (
@@ -47,13 +56,13 @@ export default function Card({ stack,stackAdded,setStackAdded }: ICard) {
           </span>
         </div>
         <button
-          className={`w-full rounded-lg ${button && `btn-disabled`} btn btn-neutral px-4 py-2.5 font-semibold text-white hover:bg-black cursor-pointer`}
-          onClick={()=>{
-            disableButton();
+          className={`w-full rounded-lg ${isAdded && `btn-disabled`} btn btn-neutral px-4 py-2.5 font-semibold text-white hover:bg-black cursor-pointer`}
+          onClick={() => {
+            // disableButton();
             stackAddedFunc();
           }}
         >
-          {button ? `Added` : `Add to Stack`}
+          {isAdded ? `Added` : `Add to Stack`}
         </button>
       </div>
     );

@@ -23,7 +23,7 @@ export default function Technologies({ stacks }: TechnologiesProps) {
         <h3>Pick one technology per category to build your ideal stack.</h3>
         <div className="grid grid-cols-1  md:grid-cols-12 gap-4 container mx-auto">
         <TechnologiesCards stackList={stacksList} stackAdded={stackAdded} setStackAdded={setStackAdded}/>
-        <YourStack stackList={stacksList} stackAdded={stackAdded} setStackAdded={setStackAdded}></YourStack>
+        <YourStack stackAdded={stackAdded} setStackAdded={setStackAdded}></YourStack>
         </div>
       </section>
     );

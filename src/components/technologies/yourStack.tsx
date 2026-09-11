@@ -2,19 +2,16 @@ import type { Technology } from "../types/types";
 import Stack from "./stack";
 
 export interface YourStack {
-  stackList: Technology[];
   stackAdded: Technology[];
   setStackAdded: React.Dispatch<React.SetStateAction<Technology[]>>;
 }
 
-export default function YourStack({ stackList,stackAdded,setStackAdded }: YourStack) {
-
+export default function YourStack({ stackAdded,setStackAdded }: YourStack) {
 
 
     
     return (
       <div className="col-span-full  md:col-span-4 sm:max-w-full sm:mx-0 flex justify-center md:block">
-        {/* max-w-sm rounded-xl border border-gray-200 bg-white p-5 shadow-sm */}
         <div className="w-full max-w-sm sm:max-w-full rounded-xl border border-gray-200 bg-white p-5 shadow-sm">
           <h3 className="mb-2 text-xl font-bold text-gray-900">Your Stack</h3>
           {stackAdded.length === 0 ? (
@@ -36,6 +33,7 @@ export default function YourStack({ stackList,stackAdded,setStackAdded }: YourSt
           ) : (
             stackAdded.map((stack) => (
               <Stack
+                key={stack.id}
                 stack={stack}
                 stackAdded={stackAdded}
                 setStackAdded={setStackAdded}

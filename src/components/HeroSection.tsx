@@ -6,7 +6,7 @@ export default function HeroSection() {
       <div className="flex flex-col gap-5 text-center items-center  sm:w-full md:text-left md:w-[50%] md:items-start">
         <h1 className="text-3xl font-bold sm:text-4xl md:text-5xl lg:text-7xl leading-tight">
           Build Your Ideal <br />
-          <span className="bg-linear-to-r from-orange-500 to-purple-600 bg-clip-text text-transparent">
+          <span className="button-gradient bg-clip-text text-transparent">
             Development Stack
           </span>
         </h1>
@@ -15,10 +15,10 @@ export default function HeroSection() {
           side by side, and put together the stack that fits your next project.
         </h3>
         <div className="flex flex-col gap-3 sm:flex-row">
-          <button className="btn w-full border-0 bg-linear-65 from-orange-400 to-pink-500 text-white hover:text-white sm:w-auto">
+          <button className="btn w-full border-0 button-gradient text-white hover:text-white sm:w-auto">
             Explore Technologies
           </button>
-          <button className="btn w-full border-gray-300 px-8 text-black hover:bg-linear-65 hover:from-orange-400 hover:to-pink-500 hover:text-white sm:w-auto">
+          <button className="btn w-full border-gray-300 px-8 text-black button-gradient-hover hover:text-white sm:w-auto">
             Learn More
           </button>
         </div>

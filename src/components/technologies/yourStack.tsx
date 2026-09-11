@@ -1,3 +1,4 @@
+import { toast } from "react-toastify";
 import type { Technology } from "../types/types";
 import Stack from "./stack";
 
@@ -8,6 +9,11 @@ export interface YourStack {
 
 export default function YourStack({ stackAdded,setStackAdded }: YourStack) {
 
+
+    const removeAll = () => {
+        setStackAdded([]);
+        toast.warn(`Removed all items from stack.`)
+    }
 
     
     return (
@@ -40,7 +46,9 @@ export default function YourStack({ stackAdded,setStackAdded }: YourStack) {
               ></Stack>
             ))
           )}
-          <button className="hidden px-12 py-0 font-semibold btn btn-outline btn-error">
+          <button
+            className={`${stackAdded.length > 0 ? `visible` : `hidden`} w-full rounded-lg  px-4 py-2.5 font-semibold cursor-pointer btn btn-outline btn-error mt-4`} onClick={removeAll}
+          >
             Remove All
           </button>
         </div>

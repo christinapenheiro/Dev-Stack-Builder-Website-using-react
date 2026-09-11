@@ -8,7 +8,7 @@ const Navbar = () => {
         <nav className="sticky top-0 bg-white z-50">
             <div className="flex justify-between items-center px-4 md:gap-4 container mx-auto py-4">
             <GiHamburgerMenu className="md:hidden" />   
-            <img src={Logo} alt="logo" className="w-22 sm:w-30"/>
+            <img src={Logo} alt="logo" className="w-25 pt-1 sm:pt-0 sm:w-30"/>
             <ul className="hidden md:flex gap-4">
                 <li className="hover:text-pink-500 cursor-pointer text-pink-500"><a href="">Home</a></li>
                 <li className="hover:text-pink-500 cursor-pointer"><a href="">Technologies</a></li>

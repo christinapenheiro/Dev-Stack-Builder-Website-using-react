@@ -1,2 +1,8 @@
 @import "tailwindcss";
 @plugin "daisyui";
+.button-gradient {
+    @apply bg-linear-to-r from-orange-500 via-pink-500 to-violet-500;
+}
+.button-gradient-hover {
+    @apply hover:bg-linear-to-r from-orange-500 via-pink-500 to-violet-500;
+}

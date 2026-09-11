@@ -20,7 +20,7 @@ export default function Card({ stack,stackAdded,setStackAdded }: ICard) {
     const stackAddedFunc = () => {
         const stackList = [...stackAdded,stack]
         setStackAdded(stackList);
-        toast.success(`${stack.name} added to your stack!`);
+        toast.success(`${stack.name} added to stack!`);
     }
 
 

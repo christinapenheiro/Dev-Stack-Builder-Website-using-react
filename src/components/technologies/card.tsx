@@ -35,7 +35,7 @@ export default function Card({ stack }: ICard) {
             {stack.rating}
           </span>
         </div>
-        <button className="w-full rounded-lg bg-gray-900 px-4 py-2.5 font-semibold text-white hover:bg-black">
+        <button className="w-full rounded-lg bg-gray-900 px-4 py-2.5 font-semibold text-white hover:bg-black cursor-pointer">
           Add to Stack
         </button>
       </div>

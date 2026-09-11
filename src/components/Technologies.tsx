@@ -1,6 +1,7 @@
 import TechnologiesCards from "./technologies/TechnologiesCards"
 import type { Technology } from "./types/types"
 import { use } from "react"
+import YourStack from "./technologies/yourStack"
 
 interface TechnologiesProps {
     stacks: Promise<Technology[]>
@@ -18,7 +19,10 @@ export default function Technologies({ stacks }: TechnologiesProps) {
           </span>
         </h2>
         <h3>Pick one technology per category to build your ideal stack.</h3>
-        <TechnologiesCards stackList={stacksList} />
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-4 container mx-auto">
+        <TechnologiesCards stackList={stacksList}/>
+        <YourStack stackList={stacksList}></YourStack>
+        </div>
       </section>
     );
 }

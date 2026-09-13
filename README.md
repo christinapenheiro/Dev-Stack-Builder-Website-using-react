@@ -45,14 +45,14 @@ What does the useState hook do, and where did you use it in this project?
 >> Usestate is used to modify state against the previous state. I used useState to update stack array in this project to add new items to stack cart.
 
 What does the useEffect hook do, and why did you need it to load the JSON data?
-
+>> useEffect hook is a React tool that is used in creating side effects in function components, such as fetching data and subscribe.
 
 Why does every item in a .map() list need a unique key prop?
-
+>>Because react need to trace each element of the .map by unique key prop
 
 What is conditional rendering? Show one place you used it (example: the empty stack message).
-
+>>Conditional rending is when rendering happens with a condition. I used conditional rendering to show empty - Your Stack . If there is no item selected it shows empty stack message.
 
 How do you pass data from a parent component to a child component, and how does a child send something back to the parent?
-
+>> I passed data from a parent component to a child component through props. If a child needs to send something back Lifting state up can be used to send props.
 
